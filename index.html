@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
-  <title>Home</title>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <title>Monilog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -12,13 +14,20 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/style-home.css">
   <link rel="stylesheet" href="css/style-banner.css">
+  <link rel="stylesheet" href="css/style-products.css">
+  <link rel="stylesheet" href="css/style-team.css">
+  <link rel="stylesheet" href="css/style-partners.css">
+  <link rel="stylesheet" href="css/style-contact.css">
   <link rel="sortcut icon" href="img/favicon.png" type="image/png" />
+
+  <meta name="theme-color" content="#164564">
+
 </head>
 
 <body>
   <!-- Barra de navegação -->
 
-  <nav>
+  <nav id="home_section">
     <a class="logo" href="#">
 
       <img src="img/1.svg" class="img-logo" alt="logo-monilog">
@@ -30,15 +39,18 @@
       <div class="line3"></div>
     </div>
     <ul class="nav-list">
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Projetos</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="#home_section">Home</a></li>
+      <li><a href="#about_us_section">Sobre nós</a></li>
+      <li><a href="#partners_section">Parceiros</a></li>
+      <li><a href="#team_section">Equipe</a></li>
+      <li><a href="#contact_section">Contato</a></li>
     </ul>
   </nav>
+
   <!-- Sessão da home -->
+
   <div class="banner-img">
-    <section class="apresentacao">
+    <section class="home">
 
       <div class="introduction">
         <div class="text-layer">
@@ -53,65 +65,217 @@
     </section>
   </div>
 
-
   <div class="container">
+    <section id="about_us_section" class="about-us">
+      <h2 class="section-title">Quem somos nós?</h2>
 
-    <hr class="line">
-    <br>
-    <br>
+      <div class="info-content">
 
-    <h2 class="title" style="text-align: center; padding-bottom: 2%;"><span class="destaque">Quem</span> somos nós?</h2>
+        <div class="img-info">
 
-    <div class="info-content">
+          <img src="img/undraw_product_tour_re_8bai.svg" alt="" style="width: 60%;">
 
-      <div class="img-info">
+        </div>
 
-        <img src="img/undraw_product_tour_re_8bai.svg" alt="" style="width: 60%;">
-
-      </div>
-
-      <div class="info">
-        <p style="font-size: medium;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus reiciendis
+        <p class="about-us-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+          reiciendis
           iusto quae iste quia porro nobis, saepe sapiente optio ab maxime officiis explicabo neque nulla, magnam rem,
           culpa deserunt? Aut!</p>
+
       </div>
-    </div>
+
+
+    </section>
 
     <hr class="line">
-    <br>
-    <br>
-    <section id="partners">
-      <h2 style="text-align: center;"><span class="destaque">Empresas</span> parceiras</h2>
-      <br>
-      <div class="partners-boxes">
 
-        <div class="box">
+    <section id="products_section" class="products">
+      <h2 class="section-title">Nossos produtos</h2>
 
-          <img src="img/bandtec-logo.png" class="box-img" alt="">
+      <img class="atmonit-img" src="./img/atmonit.svg" alt="">
 
-          <p class="info-text">Uma das maiores responsáveis pela criação da nossa empresa foi a faculdade Bandtec
-            Digital School atravéz do programa de estágio.</p>
-        </div>
-
-        <div class="box">
-
-          <img src="img/logo-valemobi-large.webp" class="box-img" alt="">
-
-
-          <p class="info-text">A ValeMobi é uma das grandes parceiras da nossa empresa por meio de uma parceria que se
-            extende a 1 ano para o desenvolvimento de estágiarios.</p>
-        </div>
-
+      <div class="product-box">
+        <p class="info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus deleniti veniam adipisci
+          eius
+          quia numquam, ut nemo, expedita molestiae aperiam dolore deserunt, delectus voluptates quidem magni nesciunt
+          fugit
+          repudiandae beatae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae inventore perferendis
+          quasi
+          reiciendis soluta itaque aliquid velit nemo reprehenderit! Ipsum suscipit quasi blanditiis rem similique
+          incidunt
+          odit exercitationem inventore facere.</p>
+        <div class="product-box-img"></div>
       </div>
 
+      <div class="product-box reverse">
+        <div class="product-box-img"></div>
+        <p class="info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus deleniti veniam adipisci
+          eius
+          quia numquam, ut nemo, expedita molestiae aperiam dolore deserunt, delectus voluptates quidem magni nesciunt
+          fugit
+          repudiandae beatae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae inventore perferendis
+          quasi
+          reiciendis soluta itaque aliquid velit nemo reprehenderit! Ipsum suscipit quasi blanditiis rem similique
+          incidunt
+          odit exercitationem inventore facere.</p>
+      </div>
+
+    </section>
+
+    <hr class="line">
+
   </div>
+
+  <section id="partners_section" class="partners">
+    <div class="container">
+      <h2 class="section-title">Nosso parceiros</h2>
+      <div class="partners-boxes">
+
+        <a class="" href="http://www.digitalschool.com.br/faculdade/" target="blank">
+
+          <div class="box">
+
+            <img src="img/bandtec-logo.png" class="box-img" alt="">
+
+            <p class="info-text">Uma das maiores responsáveis pela criação da nossa empresa foi a faculdade Bandtec
+              Digital School atravéz do programa de estágio.
+            </p>
+
+          </div>
+        </a>
+
+        <a class="" href="https://www.valemobi.com.br/" target="blank">
+          <div class="box">
+
+            <img src="img/logo-valemobi-large.webp" class="box-img" alt="">
+
+
+            <p class="info-text">A ValeMobi é uma das grandes parceiras da nossa empresa por meio de uma parceria que se
+              extende a 1 ano para o desenvolvimento de estágiarios.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
   </section>
 
+  <div class="container">
+    <hr class="line">
+
+    <section id="team_section" class="team">
+      <h2 class="section-title">Nossa Equipe</h2>
+
+      <div class="team-boxes">
+        <div class="team-person-box">
+          <div class="person-img-1"></div>
+          <p>
+            Abner Lucas
+            Desenvolvedor Backend
+          </p>
+          <div class="social-icons-team">
+            <a href="https://www.linkedin.com/in/abner-lucass/" target="blank"> <i class="fab fa-linkedin-in"></i></a>
+
+            <a href="https://github.com/abnerlucss" target="blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="team-person-box">
+          <div class="person-img-2"></div>
+          <p>
+            Caio Hideki
+            Desenvolvedor Backend
+          </p>
+          <div class="social-icons-team">
+            <a href="https://www.linkedin.com/in/caio-hideki-624a9221b/" target="blank">
+              <i class="fab fa-linkedin-in"></i></a>
+
+            <a href="https://github.com/CaioHideki" target="blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-boxes">
 
 
+        <div class="team-person-box">
+          <div class="person-img-3"></div>
+          <p>Jonas Bezerra <br>
+            DBA
+          </p>
+          <div class="social-icons-team">
+            <a href="https://www.linkedin.com/in/jonas-bezerra-junior/" target="blank"> <i
+                class="fab fa-linkedin-in"></i></a>
 
-  <br>
-  <br>
+            <a href="https://github.com/Jonas-Bezerra" target="blank"><i class="fab fa-github"></i></a>
+
+          </div>
+        </div>
+        <div class="team-person-box">
+          <div class="person-img-4"></div>
+          <p>Kennedy Martins
+            Desenvolvedor Frontend
+          </p>
+          <div class="social-icons-team">
+            <a href="https://www.linkedin.com/in/kennedy-martins-b3b1381aa/" target="blank"> <i
+                class="fab fa-linkedin-in"></i></a>
+
+            <a href="https://github.com/KennedyMartinsB" target="blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="team-person-box">
+          <div class="person-img-5"></div>
+          <p>Rafael Coelho
+            Desenvolvedor Backend
+          </p>
+          <div class="social-icons-team">
+            <a href="https://www.linkedin.com/in/rafael-coelho-68ab93167/" target="blank"> <i
+                class="fab fa-linkedin-in"></i></a>
+
+            <a href="https://github.com/CoelhoRafael" target="blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="container">
+    <section id="contact_section">
+      <form class="contact-form" action="https://api.staticforms.xyz/submit" method="post">
+        <h2 class="contact-form-title">Entre em contato</h2>
+        <!-- Replace with accesKey sent to your email -->
+        <input type="hidden" name="accessKey" value="40bacbde-248e-4137-98af-ccbdf02abbd6"> <!-- Required -->
+
+        <div class="contact-form-field">
+          Nome
+          <input class="contact-form-input" type="text" name="name"> <!-- Optional -->
+        </div>
+        <!-- <input type="text" name="subject"> Optional -->
+        <div class="contact-form-field">
+          Email
+          <input class="contact-form-input" type="text" name="email"> <!-- Optional -->
+        </div>
+        <!-- <input type="text" name="phone"> Optional -->
+        <div class="contact-form-field">
+          Mensagem
+          <textarea class="contact-form-area" name="message"></textarea> <!-- Optional -->
+        </div>
+        <!-- If you want replyTo to be set to specific email -->
+        <!-- <input type="text" name="replyTo" value="myreplytoemail@example.com"> Optional -->
+        <!-- Specify @ as reply to value if you want it to be customers email -->
+        <!-- <input type="hidden" name="replyTo" value="@"> Optional -->
+        <!-- If you want form to redirect to a specific url after submission -->
+        <input type="hidden" name="redirectTo" value="https://abnerlucss.github.io/monilog/">
+        <input class="contact-form-submit-btn" type="submit" value="Enviar" />
+      </form>
+    </section>
+  </div>
+
+  <div class="map-bar">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10343.00550249865!2d-46.69318876928928!3d-23.575458024081254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5704ae2e71e1%3A0xdb6a0d920ae3abf3!2sEscrit%C3%B3rio%20Virtual%20e%20Salas%20de%20Reuni%C3%A3o%20%7C%20BSO%20Brasil%20Smart%20Offices%20-%20Faria%20Lima!5e0!3m2!1spt-BR!2sbr!4v1630965783349!5m2!1spt-BR!2sbr"
+      width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  </div>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -119,28 +283,32 @@
         <div class="footer-col">
           <h4>Sobre nós</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#home_section">Home</a></li>
+            <li><a href="#about_us_section">Sobre</a></li>
+            <li><a href="#team_section">Equipe</a></li>
+            <li><a href="#contact_section">Contato</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Ajuda</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Formulário</a></li>
-            <li><a href="#">Email</a></li>
+            <li><a href="#contact_section">Formulário</a></li>
+            <li><a href="#contact_section">Email</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Nos Siga</h4>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
-            <a href="#"><i class="fab fa-twitter icon"></i></a>
-            <a href="#"><i class="fab fa-instagram icon"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100072375710663" target="blank">
+              <i class="fab fa-facebook-f icon"></i>
+            </a>
+            <a href="https://twitter.com/MAtmonit" target="blank">
+              <i class="fab fa-twitter icon"></i>
+            </a>
+            <a href="https://www.instagram.com/monilog.atmonit/" target="blank">
+              <i class="fab fa-instagram icon"></i>
+            </a>
           </div>
         </div>
       </div>

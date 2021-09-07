@@ -1,22 +1,56 @@
+/* GLOBAIS */
+
+:root {
+  --white: rgb(252, 252, 252);
+  --darker-blue-color: #272838;
+  --secondary-color-hover: #10344d;
+  --secondary-color: #164564;
+  --medium-blue-color: #2980B9;
+  --blue-gradient: linear-gradient(253.41deg, #418DFF 24%, rgba(255, 255, 255, 0) 101.73%), #385684;
+}
+
+/* BARRA DE SCROLL CUSTOMIZADA */
+
+::-webkit-scrollbar-track {
+  background-color: #262626;
+}
+
+::-webkit-scrollbar {
+  width: 1vh;
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue-gradient);
+}
+
+/* Definição padrão para todos os elementos */
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
-  color: #2C3E50;
+  color: var(--darker-blue-color);
+  user-select: none;
+}
+
+body {
+  /* background-color: #f3f3f3; */
 }
 
 /* Nav */
 
-a {
+nav a {
   color: #fff;
   text-decoration: none;
   font-size: 25px;
   transition: 0.3s;
 }
 
-a:hover {
+nav a:hover {
   opacity: 0.7;
 }
 
@@ -36,8 +70,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #272838;
-  height: 8vh;
+  background: var(--darker-blue-color);
+  height: 12vh;
   padding: 10px;
 }
 
@@ -80,7 +114,7 @@ nav {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: var(--darker-blue-color);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -123,80 +157,36 @@ nav {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.section-title {
+  text-align: center;
+}
 
 /* Sessão da home */
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .destaque {
-  color: #24628C;
+  color: var(--secondary-color);
 }
 
 .line {
-  height: 2px;
-  width: 60%;
-  margin: auto;
-  background-color: #24628C;
-  border-radius: 10px;
+  margin: 5% auto;
+  height: 5px;
+  width: 75%;
+  background-color: var(--secondary-color);
 }
-
-
-
-
-
-/* .header-content{
-
-  margin-top: 10%;
-  margin-bottom: 10%;
-  text-align: center;
-  color: #2C3E50;
-
-}
-
-.header-content h2{
-
-  font-size: 4vmin;
-
-}
-
-.header-content h1{
-
-  font-size: 7vmin;
-  margin-top: 16px;
-  margin-bottom: 30px;
-
-}
-
-.line{
-
-  width: 150px;
-  height: 4px;
-  background: #24628C;
-  margin: 10px auto;
-  border-radius: 5px;
-
-}
-
-.btn-home{
-
-  padding: 8px 15px;
-  background: #24628C;
-  border-radius: 50px;
-  color: whitesmoke;
-
-}
-
-.btn-home:hover{
-
-  filter: brightness(75%);
-  transition: 0.5s ease;
-
-} */
 
 /* Quem somos nós */
+
+section{
+  padding: 5% 0;
+}
+.about-us-txt {
+  text-align: justify;
+}
 
 .info-content {
   width: 90%;
@@ -223,88 +213,153 @@ nav {
   }
 }
 
-#partners {
-  padding: 5% 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/* Equipe */
 
-@media(max-width: 400px) {
-  #partners {
-    margin-bottom: 20%;
-  }
-}
-
-.partners-boxes {
+.equipe-title {
+  font-size: 30pt;
+  font-weight: bolder;
+  padding-top: 7vh;
+  padding-bottom: 5vh;
   text-align: center;
-  margin: 5% 0;
-  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.card {
+  max-width: 190px;
+  height: 40vh;
+  position: relative;
+  background-color: white;
+  margin: 35px 20px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  align-content: center;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  border: none;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.4s ease-in-out;
   border-radius: 3px;
-  min-width: 250px;
-  width: 10%;
-  height: 40vh;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  box-shadow: 3px 5px 8px 3px #00000048;
-  background-color: #ffff;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.imgbx {
+  position: relative;
+  width: 260px;
+  height: auto;
+}
+
+.card-text {
+  padding-top: 10px;
+}
+
+.position {
+  padding-left: 40px;
+  height: 100px;
+}
+
+.image {
+  padding-right: 15px;
+}
+
+.imgbx img {
+  max-width: 80%;
+}
+
+.card-title {
   text-align: center;
-  margin: 0 3% 15% 0;
+  opacity: 70%;
 }
 
-.box-img {
-  width: 80%;
+.card-subtitle {
+  text-align: center;
+  opacity: 60%;
+  margin: 0;
 }
 
-/*
-.info-img{
+/* Botões do card */
 
-  width: 90%;
-
-}
-*/
-
-.info-text {
-  font-size: 1rem;
+.btn-position {
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-/* 
-@media(max-width: 400px){
-
-  .box{
-
-    border:none;
-    border-radius: 3px;
-    width: 60%;
-    height: auto !important;
-    justify-content: center;
-    align-items: center;
-    margin:10px;
-    padding: 10px;
-    box-shadow: 3px 5px 8px 3px #00000048;
-    background-color: #ffff;
-    text-align: center;
-  
-  }
-
+.btn-icone {
+  margin-right: 5px;
+  display: inline-block;
+  width: 40px;
+  height: 40x;
+  color: #333;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid #444;
+  border-radius: 50%;
 }
 
- */
+/* Git-Hub */
+
+.git {
+  color: #2C3E50;
+}
+
+.git:hover {
+  border-color: #fff;
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(149, 0, 207, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.icone-git {
+  text-decoration: none;
+}
+
+.icone-git:hover {
+  color: white;
+}
+
+/* Linkedin */
+
+.link:hover {
+  border-color: #fff;
+  border-color: #fff;
+  color: #fff;
+  background-color: #0077b5;
+  transition: 0.5s ease-in-out;
+}
+
+.icone-link {
+  text-decoration: none;
+}
+
+.icone-link:hover {
+  color: white;
+}
+
+/* Facebook */
+
+.face:hover {
+  border-color: #fff;
+  border-color: #fff;
+  color: #fff;
+  background-color: #0077b5;
+  transition: 0.5s ease-in-out;
+}
+
+.icone-face {
+  text-decoration: none;
+}
+
+.icone-face:hover {
+  color: white;
+}
 
 /* Footer */
 
@@ -390,11 +445,10 @@ btn-home .footer-col h4::before {
 }
 
 .footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
+  background-color: var(--medium-blue-color);
 }
 
-/*responsividade*/
+/*responsividade do footer*/
 
 @media(max-width: 767px) {
   .footer-col {
@@ -408,4 +462,10 @@ btn-home .footer-col h4::before {
   .footer-col {
     width: 100%;
   }
+}
+
+.map-bar {
+  width: 100%;
+  padding-top: 50px;
+  background-color: var(--darker-blue-color);
 }
