@@ -37,10 +37,10 @@
   user-select: none;
 }
 
-body {
-  /* background-color: #f3f3f3; */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
 /* Nav */
 
 nav a {
