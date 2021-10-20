@@ -26,11 +26,6 @@
 
 /* Definição padrão para todos os elementos */
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +35,10 @@ html, body {
   scroll-behavior: smooth;
   color: var(--darker-blue-color);
   user-select: none;
+}
+
+body {
+  /* background-color: #f3f3f3; */
 }
 
 /* Nav */
@@ -198,7 +197,7 @@ section{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 @media(max-width: 767px) {
@@ -213,6 +212,7 @@ section{
     text-align: center;
   }
 }
+
 
 /* Equipe */
 
